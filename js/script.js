@@ -1,3 +1,3 @@
-function firstAlert() {
-  alert("You going to open CV of my dog! Enjoy");
+function myFunction() {
+  alert('"You going to view my FIRST homework?";');
 }
