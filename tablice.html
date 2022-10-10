@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+    <title>Tablice_Vjezba</title>
+  </head>
+  <body>
+    <!-- TABLICE OSNOVNO (Table - parent tag, TR - Table row(novi red), TD - Table data, Border - atribut za okvir) -->
+    <table border="1">
+      <tr>
+        <td>Ivan</td>
+        <td>Pero</td>
+        <td>Matea</td>
+        <td>Niko</td>
+        <td>Mark</td>
+      </tr>
+
+      <tr>
+        <td>Josip</td>
+        <td>Zeljko</td>
+        <td>Igor</td>
+        <td>Ana</td>
+        <td>Maja</td>
+      </tr>
+
+      <tr>
+        <td>Fiat</td>
+        <td>Peugeot</td>
+        <td>Audi</td>
+        <td>Volvo</td>
+        <td>Saab</td>
+      </tr>
+
+      <tr>
+        <td>Plava</td>
+        <td>Crvena</td>
+        <td>Bijela</td>
+        <td>Crna</td>
+        <td>Lila</td>
+        <td>Svijetlo smedja</td>
+      </tr>
+
+      <tr>
+        <td>HP</td>
+        <td>Lenovo</td>
+        <td>Sony</td>
+        <td>Dell</td>
+        <td>Compaq</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+
+    <!-- NASLOVNE ĆELIJE - TH (Table heading) -->
+    <table border="1">
+      <!-- Prvi red naslovne celije -->
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+        <th>Age</th>
+      </tr>
+      <!-- Drugi red podaci -->
+      <tr>
+        <td>Hrvatske sume</td>
+        <td>Pero Peric</td>
+        <td>Hrvatska</td>
+        <td>36g</td>
+      </tr>
+      <!-- Treci red podaci -->
+      <tr>
+        <td>HEP</td>
+        <td>Ivo Ivic</td>
+        <td>Hrvatska</td>
+        <td>45g</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+
+    <!-- CAPTION TAG - služi za cjelokupni naslov cijele tablice, pojavi se nad tablicom!! -->
+    <table border="1">
+      <caption>
+        Tablica Automobila
+      </caption>
+      <tr>
+        <th>Marka</th>
+        <th>Model</th>
+        <th>Motor</th>
+        <th>Cijena(eur)</th>
+      </tr>
+      <tr>
+        <td>VW</td>
+        <td>Passat</td>
+        <td>Diesel</td>
+        <td>500eur</td>
+      </tr>
+      <tr>
+        <td>Volvo</td>
+        <td>XC40</td>
+        <td>Diesel</td>
+        <td>40000eur</td>
+      </tr>
+      <tr>
+        <td>Audi</td>
+        <td>A8</td>
+        <td>Benzin</td>
+        <td>85000eur</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+
+    <!-- COLSPAN ATRIBUT (npr. kad jedna ćelija zauzme 2 stupca) -->
+    <table border="1">
+      <caption>
+        Colspan atribut
+      </caption>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+
+    <!-- ROWSPAN ATRIBUT (npr. kad jedna ćelija zauzme 2 reda) -->
+    <table border="1">
+      <caption>
+        Rowspan atribut
+      </caption>
+      <tr>
+        <th>Name</th>
+        <td>Jill</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>0999994568</td>
+      </tr>
+      <tr>
+        <td>sadsdsad</td>
+        <td>sadsdsad</td>
+        <td>sadsdsad</td>
+        <td>sadsdsad</td>
+        <td>sadsdsad</td>
+      </tr>
+      <tr>
+        <td>sadsdsad</td>
+        <td>sadsdsad</td>
+        <td>sadsdsad</td>
+        <td>sadsdsad</td>
+        <td>sadsdsad</td>
+      </tr>
+      <tr>
+        <td>sadsdsad</td>
+        <td>sadsdsad</td>
+        <td>sadsdsad</td>
+        <td>sadsdsad</td>
+        <td>sadsdsad</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+
+    <!-- STEPENICE ZADATAK -->
+    <img src="./zadatak.png" width="500px" height="300px" alt="zadatak" />
+    <br />
+    <br />
+
+    <table border="1">
+      <colgroup>
+        <col span="3" style="background-color: green" />
+      </colgroup>
+      <caption>
+        Stepenice
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="7">Naslovna celija <b>thead</b></th>
+        </tr>
+      </thead>
+      <tr>
+        <td colspan="6">1.celija</td>
+        <td rowspan="5">2..celija</td>
+      </tr>
+      <tr>
+        <td>3.celija</td>
+        <td>4.celija</td>
+        <td>5.celija</td>
+        <td>6.celija</td>
+        <td>7.celija</td>
+        <td rowspan="4">8 cel.</td>
+      </tr>
+      <tr>
+        <td>9.celija</td>
+        <td>10.celija</td>
+        <td rowspan="3">11.celija</td>
+        <td colspan="2">12.celija</td>
+      </tr>
+      <tr>
+        <td>13.celija</td>
+        <td rowspan="2">14.celija</td>
+        <td>15.celija</td>
+        <td>16.celija</td>
+      </tr>
+      <tr>
+        <td>17.celija</td>
+        <td>18.celija</td>
+        <td>19.celija</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <th colspan="7">Footer celija <b>thead</b></th>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <br />
+    <br />
+    <button class="btndomaci_1"><a href="#top">Top of page!</a></button>
+    <button class="btndomaci_2"><a href="https://ivan-turk.github.io/html-vjezbe/">Back to homepage!</a></button>
+  </body>
+</html>
