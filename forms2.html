@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Forms 2</title>
+  </head>
+  <center>
+    <body class="forms2">
+      <h1>Forms 2</h1>
+      <form action="#" method="get" oninput='tax.value=parseInt(parseInt(notax.value)*0.2).toString() + "eur"'>
+        <!-- Fieldset i legend -->
+        <fieldset style="width: 0px">
+          <legend>
+            <b><i>User data</i></b>
+          </legend>
+          <br />
+
+          <!-- Tekst inputi -->
+          <label for="fname">Your name:</label><br />
+          <input type="text" id="fname" name="fname" placeholder="Name" /><br /><br />
+          <label for="lname">Your surname:</label><br />
+          <input type="text" id="lname" name="lname" placeholder="Surname" /><br /><br />
+          <label for="email">E-mail:</label><br />
+          <input type="email" id="email" name="email" placeholder="E-mail" /><br /><br />
+          <hr />
+          <br />
+
+          <!-- Tekst area element -->
+          <label for="description">Write something about yourself...</label>
+          <textarea name="about" id="description" cols="50" rows="10"></textarea>
+          <br />
+          <br />
+          <hr />
+          <br />
+
+          <!-- OPT GROUP element - grupiranje elemenata pod 'option' -->
+          <label for="pc">Choose favorite PC Brand & Model:</label><br /><br />
+          <select name="pc" id="pc">
+            <option value="">Select one model</option>
+            <optgroup label="Lenovo">
+              <option value="legion">Legion</option>
+              <option value="ideapad">Ideapad</option>
+            </optgroup>
+            <optgroup label="HP">
+              <option value="g8">G8</option>
+              <option value="victus">Victus</option>
+              <option value="omen">Omen</option>
+              <option value="pavilion">Pavilion</option>
+            </optgroup>
+            <optgroup label="Asus">
+              <option value="vivobook">VivoBook</option>
+              <option value="expertbook">ExpertBook</option>
+              <option value="zenbook">ZenBook</option>
+            </optgroup>
+            <optgroup label="Apple">
+              <option value="imac">iMac</option>
+              <option value="macbookpro">Macbook Pro</option>
+              <option value="macbookair">Macbook Air</option>
+            </optgroup>
+          </select>
+          <br />
+          <br />
+          <hr />
+
+          <!-- OUTPUT Element -->
+          <label for="notax">No TAX salary:</label><br />
+          <input id="notax" name="notax" type="range" min="100000" max="1000000" value="500000" /><br />
+          <label for="tax">TAX:</label>
+          <output name="tax" for="notax">100000</output>
+          <br />
+          <hr />
+          <fieldset>
+            <legend>
+              <b><i>CAPTCHA test</i></b>
+            </legend>
+
+            <!-- Datalist elementi (predefinirani unos) -->
+            <label for="city">Capital city of Croatia?</label><br /><br />
+            <input list="city" name="city" placeholder="Capital city" />
+            <datalist id="city">
+              <option value="Rijeka"></option>
+              <option value="Split"></option>
+              <option value="Zagreb"></option>
+              <option value="Dubrovnik"></option>
+            </datalist>
+          </fieldset>
+          <br />
+          <br />
+          <input type="submit" value="Submit!" onclick="alert('Thanx for your time')" />
+
+          <!-- eMoji -->
+          <p>&#128512;</p>
+          <button type="button" onclick="alert('Just a dummy button!')">Try me</button>
+        </fieldset>
+      </form>
+
+      <!-- Button elementi -->
+      <button class="btndomaci_1"><a href="#top">Top of page!</a></button><br />
+      <button class="btndomaci_2"><a href="https://ivan-turk.github.io/html-vjezbe/">Back to homepage!</a></button>
+    </body>
+  </center>
+</html>
