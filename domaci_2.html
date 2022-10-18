@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ivan Turk" />
+    <meta name="description" content="Stranica o lokalnim običajima" />
+    <title>Lokalni običaji</title>
+  </head>
+  <body style="background-image: url(./multimedia/imageedit_1_4575349502.png)">
+    <header>
+      <img src="./multimedia/logo.png" alt="" /><br /><br />
+      <nav style="text-align: center">
+        <h1>Lokalni običaji grada Ogulina</h1>
+        <a href="#opcenito" style="text-decoration: none">Općenito |</a>
+        <a href="#turizam" style="text-decoration: none">Turizam |</a>
+        <a href="#gastro" style="text-decoration: none">Gastronomija |</a>
+        <a href="#footer" style="text-decoration: none">O autoru</a>
+      </nav>
+      <br /><br /><br /><br />
+    </header>
+    <!-- Header završio, počinje main - glavni sadržaj stranice -->
+    <main style="display: inline-block; width: 70%">
+      <section>
+        <article id="opcenito">
+          <ul>
+            <li>
+              <a href="./domaci2_1.html" target="_blank" style="text-decoration: none; color: black"><h3>Općenito</h3></a>
+            </li>
+          </ul>
+          <p style="text-indent: 2%">
+            U samom središtu Hrvatske, na tromeđi Like, Gorskog Kotara i Korduna, pod velebnom planinom Klek, utemeljen je početkom 16. stoljeća grad Ogulin. Nakon što su Turci
+            1493. godine opustošili obližnji srednjovjekovni grad Modruš (Tržan-grad), modruški knez i jedan od najmoćnijih velikaša svoga vremena, Bernardin Frankopan, dao je
+            ponad litice kanjona rijeke Dobre izgraditi novu utvrdu, koja je uspješno odolijevala osmanlijskim napadima te je postala središnjom građevinom oko koje se formirao
+            današnji grad Ogulin. Vrijeme izgradnje ogulinske utvrde nije točno utvrđeno, no poznata je isprava Bernardina Frankopana koju je izdao oko 1500.-te godine kada je
+            novosagrađenom gradu Ogulinu označio granice između Modruša i Vitunja. Već tada je zapisano današnje ime Ogulina, za koje se pretpostavlja da potječe od latinskog
+            izraza „ob gula“ što znači ždrijelo ili ponor. Iako je ogulinski kaštel primarno izgrađen u vojno-obrambenu svrhu, ubrzo se u njegove zidine doselilo okolno
+            stanovništvo tražeći zaštitu pred turskom opasnosti.
+          </p>
+        </article>
+        <br />
+        <hr />
+        <article id="turizam">
+          <ul>
+            <li>
+              <a href="./domaci2_2.html" target="_blank" style="text-decoration: none; color: black"><h3>Turizam</h3></a>
+            </li>
+          </ul>
+          <p style="text-indent: 2%">
+            Turistička zajednica grada Ogulina je pravna osoba, čije su članice pravne i fizičke osobe koje pružaju ugostiteljske i druge turističke usluge ili obavljaju drugu
+            djelatnost neposredno povezanu s turizmom na način da upravlja destinacijom za područje Grada Ogulina. Zadaće Zajednice su promoviranje turističke destinacije
+            samostalno i putem udruženog oglašavanja, upravljanje javnom turističkom infrastrukturom danom na upravljanje od strane Grada Ogulina, sudjelovanje u definiranju
+            ciljeva i politike razvoja turizma Grada Ogulina, sudjelovanje u stvaranju uvjeta za efikasnu koordinaciju javnog i privatnog sektora, poticanje optimalizacije i
+            uravnoteženje ekonomskih i društvenih koristi i koristi za okoliš, izrada strateških i razvojnih planova turizma na nivou Grada Ogulina, koordinacija djelovanja svih
+            subjekata koji su neposredno ili posredno uključeni u turistički promet radi zajedničkog dogovaranja, utvrđivanja i provedbe politike razvoja turizma i obogaćivanja
+            turističke ponude i ostalo.
+          </p>
+        </article>
+        <br />
+        <hr />
+        <article id="gastro">
+          <ul>
+            <li>
+              <a href="./domaci2_3.html" target="_blank" style="text-decoration: none; color: black"><h3>Gastronomija</h3></a>
+            </li>
+          </ul>
+          <p style="text-indent: 2%">
+            Poznati gastronomski specijaliteti ogulinskog kraja su masnica, mošnje, smisni kruh, ogulinsko zelje, zagorska borova rakija, med i jabučni ocat. Smisni kruh je domaći
+            ukusni mirišljivi kruh ispečen od pet vrsta brašna: pšenice, prosa, kukuruza, ječma i raži. Vrlo je ukusan i kravlji sir iz biodinamične proizvodnje usiren prirodnom
+            soli, kako to rade neke obitelji u Ogulinskom Zagorju.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- DONACIJE -->
+    <aside style="display: inline-block; width: 25%; vertical-align: top">
+      <form action="javascript:alert('Hvala na donaciji!!)" method="get">
+        <fieldset style="width: 0px">
+          <legend><b>Donacije:</b></legend>
+          <label for="fname">Vaše ime:</label>
+          <input type="text" id="fname" name="fname" required placeholder="Vaše ime!" /><br />
+          <label for="lname">Vaše prezime:</label>
+          <input type="text" id="lname" name="lname" required placeholder="Vaše prezime!" /><br />
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email" placeholder="E-mail" required /><br /><br />
+          <hr />
+          <b>Iznos donacije:</b><br />
+          <input type="radio" id="500" name="donirano" />
+          <label for="radio">500kn</label><br />
+          <input type="radio" id="1000" name="donirano" />
+          <label for="radio">1000kn</label><br />
+          <input type="radio" id="2000" name="donirano" />
+          <label for="radio">2000kn</label><br />
+          <hr />
+          <button type="submit">Doniraj!</button>
+        </fieldset>
+        <br />
+      </form>
+      <video width="350" height="250" controls preload="metadata">
+        <source src="./multimedia/money.mp4" type="video/mp4" />
+      </video>
+    </aside>
+    <hr />
+    <br />
+    <footer id="footer">
+      <b>Copyright &copy; 2022 by Ivan Turk</b><br />
+      <button><a href="#top" style="text-decoration: none">Na vrh &uArr;</a></button> | <button><a href="mailto:someone@example.com">Pošaljite mail</a></button>
+    </footer>
+  </body>
+</html>
